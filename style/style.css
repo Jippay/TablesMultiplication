@@ -5,8 +5,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgba(184, 184, 184, 0.753);
-    display: flex;
-    flex-direction : column;
+
 }
 header{
     position: absolute;
@@ -26,7 +25,8 @@ main{
     background-color: white;
     width: 90%;
     border-radius: 0.5em;
-    margin : 10% 5%;  
+    margin : 10% 5%;
+    text-align: center;
 }
 main:hover{
     box-shadow: 1px 1px 20px rgb(88, 88, 88);
