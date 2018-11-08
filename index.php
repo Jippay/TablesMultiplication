@@ -14,18 +14,18 @@
     </header>
     <main>
         <div class="container1">
-            <form action="#" class="choixTables" id="choixTables" method="GET">
-                <select name="tables">
-                    <option value="table1">Table de 1</option>
-                    <option value="table2">Table de 2</option>
-                    <option value="table3">Table de 3</option>
-                    <option value="table4">Table de 4</option>
-                    <option value="table5">Table de 5</option>
-                    <option value="table6">Table de 6</option>
-                    <option value="table7">Table de 7</option>
-                    <option value="table8">Table de 8</option>
-                    <option value="table9">Table de 9</option>
-                    <option value="table10">Table de 10</option>
+            <form class="choixTables" id="choixTables" method="GET" action="cible.php">
+                <select id="tables" name="tables">
+                    <option value="1">Table de 1</option>
+                    <option value="2">Table de 2</option>
+                    <option value="3">Table de 3</option>
+                    <option value="4">Table de 4</option>
+                    <option value="5">Table de 5</option>
+                    <option value="6">Table de 6</option>
+                    <option value="7">Table de 7</option>
+                    <option value="8">Table de 8</option>
+                    <option value="9">Table de 9</option>
+                    <option value="10">Table de 10</option>
                 </select>
                 <p class="choixText">Choix de la table à afficher</p>
                 <input type="submit" class="voir" value="voir">
