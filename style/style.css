@@ -1,0 +1,64 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(184, 184, 184, 0.753);
+    display: flex;
+    flex-direction : column;
+}
+header{
+    position: absolute;
+    z-index : 1;
+    background-color: #64b5f6;
+    height : 100px;
+    width : 100%;
+    
+}
+h2{
+    padding : 10px 15px 0px 15px;
+}
+
+main{
+    position : absolute;
+    z-index : 2;
+    background-color: white;
+    width: 90%;
+    border-radius: 0.5em;
+    margin : 10% 5%;  
+}
+main:hover{
+    box-shadow: 1px 1px 20px rgb(88, 88, 88);
+}
+
+select{
+    width : 90%;
+    height: 35px;
+    margin: 2% 5% 2% 5%;
+    border-radius: 0.2em;
+    z-index: 3;
+    font-size: 1.5em;
+}
+
+.choixText{
+    padding : 0 0 10px 10px;
+    font-size: 1.1em;
+}
+
+.voir{
+    text-align : center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color : white;
+    width : 20%;
+    height : 20%;
+    margin-left : 75%;
+    margin-bottom : 2%;
+    background-color: #1e85c1;
+    border : none;
+    border-radius: 0.5em;
+}
+footer{
+    background-color: grey;
+}
