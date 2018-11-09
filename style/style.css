@@ -9,9 +9,9 @@ body{
 }
 header{
     position: absolute;
-    z-index : 1;
+    top: 0;
     background-color: #64b5f6;
-    height : 100px;
+    height : 30%;
     width : 100%;
     
 }
@@ -20,8 +20,8 @@ h2{
 }
 
 main{
-    position : absolute;
-    z-index : 2;
+    position : relative;
+    top: 25%;
     background-color: white;
     width: 90%;
     border-radius: 0.5em;
