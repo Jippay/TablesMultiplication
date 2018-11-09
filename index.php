@@ -32,7 +32,11 @@
             <p class="choixText">Choix de la table à afficher</p>
             <input type="submit" id="voir" class="voir" value="voir">
         </form>
-        
+        <div class="resultat">
+            <div class="gauche"></div>
+            <div class="centre"></div>
+            <div class="droite"></div>
+        </div>
     <?php
     if ( isset($_GET['tables'])) {
         $table = $_GET["tables"];
