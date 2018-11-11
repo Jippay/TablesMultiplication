@@ -33,22 +33,29 @@
             <input type="submit" id="voir" class="voir" value="voir">
         </form>
         <div class="resultat">
-            <div class="gauche"></div>
-            <div class="centre"></div>
-            <div class="droite"></div>
+            <div class="gauche">
+                <?php
+                    if ( isset($_GET['tables'])) {
+                        include "calcul1.php";
+                    }
+                ?>
+            </div>
+            <div class="centre">
+                <?php
+                    if ( isset($_GET['tables'])) {
+                        include "calcul2.php";
+                    }
+                ?>
+            </div>
+            <div class="droite">
+                <?php
+                    if ( isset($_GET['tables'])) {
+                        include "calcul3.php";
+                    }
+                ?>
+            </div>
         </div>
-    <?php
-    if ( isset($_GET['tables'])) {
-        $table = $_GET["tables"];
-        $total = 'Table de multiplication de '.$table.'<br />';
-        $x=0;
-            for ($x = 0; $x <= 30; $x++) {
-                $total .= $x." X ".$table." = ".$x*$table."<br />";
-            }
-        echo $total;
-        
-    }
-    ?>
+   
     
     </main>
     <footer>

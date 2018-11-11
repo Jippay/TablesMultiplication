@@ -1,0 +1,13 @@
+<?php
+//fonction calcul 10 à 20//
+$table = $_GET["tables"];
+$total = 'Table de multiplication de '.$table.'<br />';
+$x=0;
+
+for ($x = 11; $x <= 20; $x++) {
+    $total .= $x." X ".$table." = ".$x*$table."<br />";
+        
+    }
+
+echo $total;
+?>
