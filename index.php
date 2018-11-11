@@ -32,28 +32,33 @@
             <p class="choixText">Choix de la table à afficher</p>
             <input type="submit" id="voir" class="voir" value="voir">
         </form>
+        <?php
+                $table = $_GET["tables"];
+                echo 'Table de multiplication de '.$table
+            ?>
         <div class="resultat">
-            <div class="gauche">
-                <?php
-                    if ( isset($_GET['tables'])) {
-                        include "calcul1.php";
-                    }
-                ?>
-            </div>
-            <div class="centre">
-                <?php
-                    if ( isset($_GET['tables'])) {
-                        include "calcul2.php";
-                    }
-                ?>
-            </div>
-            <div class="droite">
-                <?php
-                    if ( isset($_GET['tables'])) {
-                        include "calcul3.php";
-                    }
-                ?>
-            </div>
+
+                <div class="gauche">
+                    <?php
+                        if ( isset($_GET['tables'])) {
+                            include "calcul1.php";
+                        }
+                    ?>
+                </div>
+                <div class="centre">
+                    <?php
+                        if ( isset($_GET['tables'])) {
+                            include "calcul2.php";
+                        }
+                    ?>
+                </div>
+                <div class="droite">
+                    <?php
+                        if ( isset($_GET['tables'])) {
+                            include "calcul3.php";
+                        }
+                    ?>
+                </div>
         </div>
    
     

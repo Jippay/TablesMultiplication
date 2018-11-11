@@ -60,6 +60,11 @@ select{
     border-radius: 0.5em;
 }
 
+.resultat{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 footer{
     background-color: grey;
