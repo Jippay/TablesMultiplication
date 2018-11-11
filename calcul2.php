@@ -1,5 +1,5 @@
 <?php
-//fonction calcul 10 à 20//
+//fonction calcul 11 à 20//
 $table = $_GET["tables"];
 $total = '<br />';
 $x=0;
