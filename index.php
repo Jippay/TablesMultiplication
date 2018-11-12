@@ -13,7 +13,7 @@
 
 <body>
     <header>
-            <h2>Tables de Multiplication</h2>
+            <h1>Tables de Multiplication</h1>
     </header>
     <main>
         <form class="choixTables" id="choixTables" method="GET" action="index.php">
@@ -32,32 +32,32 @@
             <p class="choixText">Choix de la table à afficher</p>
             <input type="submit" id="voir" class="voir" value="voir">
         </form>
-        <?php
+            <?php
                 $table = $_GET["tables"];
-                echo 'Table de multiplication de '.$table
+                echo '<h2>'.'Table de multiplication de '.$table.'</h2>';
             ?>
-        <div class="resultat">
-
-                <div class="gauche">
-                    <?php
-                        if ( isset($_GET['tables'])) {
-                            include "calcul1.php";
-                        }
-                    ?>
-                </div>
-                <div class="centre">
-                    <?php
-                        if ( isset($_GET['tables'])) {
-                            include "calcul2.php";
-                        }
-                    ?>
-                </div>
-                <div class="droite">
-                    <?php
-                        if ( isset($_GET['tables'])) {
-                            include "calcul3.php";
-                        }
-                    ?>
+                <div class="result">
+                    <div class="gauche">
+                        <?php
+                            if ( isset($_GET['tables'])) {
+                                include "calcul1.php";
+                            }
+                        ?>
+                    </div>
+                    <div class="centre">
+                        <?php
+                            if ( isset($_GET['tables'])) {
+                                include "calcul2.php";
+                            }
+                        ?>
+                    </div>
+                    <div class="droite">
+                        <?php
+                            if ( isset($_GET['tables'])) {
+                                include "calcul3.php";
+                            }
+                        ?>
+                    </div>
                 </div>
         </div>
    
